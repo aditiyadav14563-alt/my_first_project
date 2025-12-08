@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    /* ===== Common Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 20px;
+    }
+
+    /* ===== HEADER COMPATIBILITY ===== */
+    header {
+      width: 100%;
+    }
+
+    /* ===== FORM WRAPPER ===== */
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+    }
+
+    /* ===== FORM CONTAINER ===== */
+    .form-container {
+      width: 100%;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      padding: 35px 28px;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      color: #fff;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    /* ===== GRID ROWS ===== */
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== Form Fields ===== */
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-top: 6px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      transition: 0.25s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      box-shadow: 0 0 10px rgba(255,255,255,0.8);
+    }
+
+    textarea {
+      resize: none;
+      height: 90px;
+    }
+
+    /* ===== Buttons ===== */
+    .button-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 480px) {
+      .button-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .btn {
+      padding: 14px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 14px;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s ease;
+    }
+
+    .submit-btn {
+      background: linear-gradient(135deg, #ff9800, #ff5722);
+    }
+
+    .reset-btn {
+      background: linear-gradient(135deg, #9e9e9e, #616161);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ========= HEADER ========= -->
+<header>
+  <div class="logo">
+    <img src="./IMAGES/images.logo" alt="Logo">
+  </div>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./register.html" class="btn">Register</a></li>
+      <li><a href="./login.html" class="btn-outline">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ========= MAIN FORM SECTION ========= -->
+<div class="form-wrapper">
+  <div class="form-container">
+    <h2>Student Registration Form</h2>
+
+    <form>
+      <div class="row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Enter last name" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter email" required>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Gender</label>
+          <select required>
+            <option value="">Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Course</label>
+        <select required>
+          <option value="">Select course</option>
+          <option>Computer Science</option>
+          <option>Information Technology</option>
+          <option>Mechanical Engineering</option>
+          <option>Business Management</option>
+          <option>Fine Arts</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Address</label>
+        <textarea placeholder="Enter full address"></textarea>
+      </div>
+
+      <div class="button-row">
+        <button class="btn submit-btn" type="submit">Submit</button>
+        <button class="btn reset-btn" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ========= FOOTER ========= -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📞 7499535772</p>
+      <p>📧 aditiyadav114563@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+      <img src="./IMAGES/images.lily" alt="Profile">
+      <h3>Developed By</h3>
+      <p>Aditi Yadav</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Address</h3>
+      <p>JS ITI Palahipatti</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2025 All Rights Reserved
+  </div>
+</footer>
+
+</body>
+</html>

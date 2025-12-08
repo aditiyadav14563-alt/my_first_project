@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Header & Footer</title>
+   <link rel="stylesheet" href="./style.css">
+  <style>
+
+        body{
+            margin: 0;
+            background-color:f7f7f7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .about-section{
+            font-size: 60px 20px;
+            text-align: center;
+        }
+        .about-section h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .about-section p{
+            max-width: 900px;
+            margin: 10px auto;
+            font-size: 18px;
+            line-height: 1.7;
+
+        }
+        .container{
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .heading{
+            color: #333;
+            margin-top: 40px;
+            border-left: 5px solid #0099ff;
+            padding-left: 10px;
+        }
+        ul{
+            padding-left: 20px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        .aboutbox{
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15)
+        }
+        .courses-box{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .courses-box div{
+            background: white;
+            flex: 1 1 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            margin: 20px;
+        }
+        .footer-line{
+            height: 4px;
+            background: #0099ff;
+            width: 200px;
+            margin: 40px auto  0;
+        }
+</style>
+
+  
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="logo">
+    <img src="./IMAGES/images.logo" alt="Logo">
+    
+  </div>
+
+  <!-- Checkbox for Toggle -->
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- Toggle Icon -->
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./register.html" class="btn">Register</a></li>
+      <li><a href="./login.html" class="btn-outline">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+    <!-- about section -->
+    <div class="about-section">
+        <h1>About JD ITI Palhipatti</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Nostrum, similique, libero vitae numquam quos animi labore
+              molestias ratione ullam officia, velit debitis!
+               Reiciendis ex aperiam minima aliquid assumenda sequi fugit!
+             similique, libero vitae numquam quos animi labore
+              molestias ratione ullam officia, velit debitis!
+               Reiciendis ex aperiam minima aliquid assumenda sequi fugit!
+               libero vitae numquam quos animi labore
+              molestias ratione ullam officia, velit debitis!
+               Reiciendis ex aperiam minima aliquid assumenda sequi fugit!  libero vitae numquam quos animi labore
+              molestias ratione ullam officia, velit debitis!
+               Reiciendis ex aperiam minima aliquid assumenda sequi fugit!
+               libero vitae numquam quos animi labore
+              molestias ratione ullam officia, velit debitis!
+               Reiciendis ex aperiam minima aliquid assumenda sequi fugit!</p>
+               </div>
+
+
+
+             <div class="container">
+             <div class="aboutbox">
+             <h2 class="heading">Our Mission</h2> 
+            <ul>
+                <li>To provide excellent vocational education & industrial training</li>
+                <li>To prepare students for government and private sector jobs</li>
+                <li>To promote skill development and self-employment</li>
+                <li>To develop professionally trained manpower for industries</li>
+            </ul>
+              </div>
+                
+               <div class="aboutbox">
+                <h2 class="heading">Why Choose JS ITI</h2>
+                 <ul>
+                <li>Experienced and qualified trainers</li>
+                <li>Practical and industry-oriented training</li>
+                <li>Well-equipped labs and computer classrooms</li>
+                <li>Personality development and soft skills training</li>
+                <li>Placement assistance and career guidance</li>
+            </ul>
+        </div>
+               <!-- Courses -->
+            <h2>Courses Offered</h2>
+            <div class="courses-box">
+                <div>
+                <h3>Copa (computer Oprator & Programing Assistance)</h3>
+                <UL>
+
+                    <li>Basics Of computer & MS office</li>
+                    <li>Web designing (HTML,CSS)<li>
+                    <li>Networking fundamentals</li>
+                    <li>Internet & Email</li>
+                    </ul>
+                    </div>
+
+                    <div>
+                    <h3>Electrician</h3>
+                    <ul>
+                     <li>Basics Of computer & MS office</li>
+                    <li>Web designing (HTML,CSS)<li>
+                    <li>Networking fundamentals</li>
+                    <li>Internet & Email</li>
+                    </ul>
+                </div>
+
+            
+                
+            </div>
+                 <div class="courses-box">
+                <div>
+                <h3>Copa (computer Oprator & Programing Assistance)</h3>
+                <UL>
+                    <li>Basics of computer & MS Office</li>
+                    <li>Web designing (HTML, CSS)</li>
+                    <li>Networking fundamentals</li>
+                    <li>Internet & Email</li>
+                    </ul>
+                </div>
+
+                    <div>
+                    <h3>Electrician</h3>
+                    <ul>
+                     <li>Electrical wiring & installation</li>
+                    <li>Motors and transformers</li>
+                    <li>Safety & measuring instruments</li>
+                    <li>Commercial & residential electrical work</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📞 7499535772</p>
+      <p>📧 aditiyadav114563@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+      <img src="./IMAGES/images.lily" alt="Profile">
+      <h3>Developed By</h3>
+      <p>Aditi Yadav</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Address</h3>
+      <p>JS ITI Palahipatti</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2025 All Rights Reserved
+  </div>
+</footer>
+
+</body>
+</html>
