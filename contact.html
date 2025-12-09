@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Website</title>
+<link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:"Poppins", sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#333;
+    }
+
+    
+    /* ===== CONTACT SECTION ===== */
+    .contact-section{
+      width:100%;
+      padding:50px 15px;
+      min-height:calc(100vh - 140px);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#4a90e2,#8e44ad);
+    }
+
+    .contact-box{
+      width:100%;
+      max-width:1100px;
+      background:#fff;
+      border-radius:20px;
+      box-shadow:0 20px 60px rgba(0,0,0,0.2);
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      overflow:hidden;
+    }
+
+    .contact-left{
+      background:linear-gradient(135deg,#4a90e2,#5f2c82);
+      color:#fff;
+      padding:60px 40px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .contact-left h2{
+      font-size:32px;
+      margin-bottom:15px;
+    }
+
+    .contact-left p{
+      font-size:16px;
+      line-height:1.7;
+      opacity:.95;
+    }
+
+    .contact-right{
+      padding:60px 40px;
+      background:#fff;
+    }
+
+    .contact-right h2{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:28px;
+    }
+
+    .input-group{
+      display:flex;
+      align-items:center;
+      background:#f4f6fb;
+      margin-bottom:16px;
+      padding:14px 16px;
+      border-radius:10px;
+      border:2px solid transparent;
+      transition:.25s ease;
+    }
+
+    .input-group i{
+      margin-right:12px;
+      color:#777;
+    }
+
+    .input-group input,
+    .input-group textarea{
+      width:100%;
+      border:none;
+      background:transparent;
+      outline:none;
+      font-size:15px;
+    }
+
+    .input-group:focus-within{
+      background:#eef4ff;
+      border-color:#4a90e2;
+      box-shadow:0 0 0 2px rgba(74,144,226,.15);
+    }
+
+    textarea{
+      resize:none;
+    }
+
+    .send-btn{
+      width:100%;
+      padding:14px;
+      background:linear-gradient(135deg,#4a90e2,#5f2c82);
+      color:#fff;
+      border:none;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+      transition:.3s ease;
+    }
+
+    .send-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    }
+
+   
+    
+    
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="logo">
+    <img src="./IMAGES/images.logo" alt="Logo">
+    
+  </div>
+
+  <!-- Checkbox for Toggle -->
+  <input type="checkbox" id="menu-toggle" />
+
+  <!-- Toggle Icon -->
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./register.html" class="btn">Register</a></li>
+      <li><a href="./login.html" class="btn-outline">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  
+
+    
+
+    <div class="contact-right">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="input-group">
+          <i class="fa fa-user"></i>
+          <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-envelope"></i>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-phone"></i>
+          <input type="tel" placeholder="Mobile Number" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fa fa-comment"></i>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+
+ 
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📞 7499535772</p>
+      <p>📧 aditiyadav14563@gmail.com</p>
+    </div>
+
+    <div class="footer-box">
+      <img src="./IMAGES/images.lily" alt="Profile">
+      <h3>Developed By</h3>
+      <p>Aditi Yadav</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Address</h3>
+      <p>JS ITI Palahipatti</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2025 All Rights Reserved
+  </div>
+</footer>
+
+</body>
+</html>
